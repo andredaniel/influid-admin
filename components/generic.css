@@ -1,0 +1,44 @@
+html.wp-toolbar {
+  padding-top: 50px;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+#wpcontent {
+  margin-left: 200px;
+}
+
+.folded #wpcontent, .folded #wpfooter {
+  margin-left: 55px;
+}
+
+.postbox .inside h2,
+.wrap [class$=icon32]+h2,
+.wrap h1,
+.wrap>h2:first-child {
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+
+/* save post */
+#minor-publishing-actions .button {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+#minor-publishing-actions .button.preview {
+  background-color: transparent;
+  border: 1px solid #0ab496;
+  color: #0ab496;
+}
+
+#minor-publishing-actions .spinner {
+  position: absolute;
+  right: 5px;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}

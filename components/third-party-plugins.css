@@ -1,0 +1,26 @@
+/* yoast */
+#wpadminbar .yoast-logo.svg {
+  height: 50px !important;
+  background-position: 0 15px !important;
+}
+
+#wpadminbar .yoast-issue-counter {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  float: right;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 14px;
+  padding: 0 !important;
+}
+
+#wpadminbar .yoast-issue-counter span {
+  font-size: 12px;
+  margin-top: -7px;
+  display: block;
+}
+
+#wpadminbar #wp-admin-bar-wpseo-menu .adminbar-seo-score {
+  margin-top: 19px !important;
+}

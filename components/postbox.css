@@ -1,0 +1,10 @@
+.postbox {
+  box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+  border: none;
+}
+
+#dashboard_quick_press input,
+#dashboard_quick_press textarea {
+  display: block;
+  float: none;
+}

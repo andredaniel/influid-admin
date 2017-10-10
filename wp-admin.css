@@ -1,0 +1,10 @@
+@import 'components/generic.css';
+@import 'components/wp-admin-bar.css';
+@import 'components/wp-admin-menu.css';
+@import 'components/screen-meta-links.css';
+@import 'components/forms.css';
+@import 'components/wp-footer.css';
+@import 'components/postbox.css';
+@import 'components/buttons.css';
+@import 'components/user-menu.css';
+@import 'components/third-party-plugins.css';
