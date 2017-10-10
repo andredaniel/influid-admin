@@ -2,7 +2,6 @@
 #adminmenu .wp-submenu,
 #adminmenuback,
 #adminmenuwrap {
-  background-color: #282c38;
   box-sizing: border-box;
   width: 200px;
 }
@@ -18,12 +17,9 @@
 }
 
 #adminmenu div.separator {
-  background-color: #1f222e;
+  background-color: rgba(0, 0, 0, 0.25);
+  mix-blend-mode: overlay;
   height: 1px;
-}
-
-#adminmenu a {
-  color: #8e98a2;
 }
 
 #adminmenu .wp-submenu a:focus,
@@ -34,7 +30,6 @@
 #adminmenu li.opensub>a.menu-top,
 #adminmenu li>a.menu-top:focus {
   border-radius: 5px;
-  color: #03d997;
 }
 
 #adminmenu .wp-has-current-submenu .wp-submenu,
@@ -49,7 +44,7 @@
 #adminmenu li.menu-top:hover,
 #adminmenu li.opensub>a.menu-top,
 #adminmenu li>a.menu-top:focus {
-  background: none;
+  border-radius: 5px;
 }
 
 #adminmenu .wp-has-current-submenu .wp-submenu .wp-submenu-head,
@@ -60,8 +55,6 @@
 .folded #adminmenu li.current.menu-top,
 .folded #adminmenu li.wp-has-current-submenu {
   border-radius: 5px;
-  background-color: #1f222e;
-  color: #03d997;
 }
 
 #adminmenu .current div.wp-menu-image:before,
@@ -71,32 +64,22 @@
 #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
 #adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
-  color: #03d997;
   opacity: 0.7;
 }
 
 #adminmenu div.wp-menu-image:before {
   opacity: 0.5;
-  color: #6a7582;
-}
-
-#adminmenu li a:focus div.wp-menu-image:before,
-#adminmenu li.opensub div.wp-menu-image:before,
-#adminmenu li:hover div.wp-menu-image:before {
-  color: #03d997;
 }
 
 #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after {
   border: 6px solid transparent;
-  border-right-color: #313542;
   margin-top: 1px;
   right: -10px;
 }
 
 ul#adminmenu a.wp-has-current-submenu:after,
 ul#adminmenu>li.current>a.current:after {
-  border: 6px solid transparent;
-  border-right-color: #f5f7fa;
+  border-width: 6px;
   margin-top: -6px;
   right: -10px;
 }
@@ -107,7 +90,6 @@ ul#adminmenu>li.current>a.current:after {
 
 #adminmenu .wp-not-current-submenu .wp-submenu,
 .folded #adminmenu .wp-has-current-submenu .wp-submenu {
-  background-color: #313542;
   padding: 10px 0;
 }
 

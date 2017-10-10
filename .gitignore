@@ -1,1 +1,6 @@
+# project folders
+node_modules/
+dist/
+
+# Operational systems files
 .DS_Store

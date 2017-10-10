@@ -1,9 +1,9 @@
 #contextual-help-link-wrap,
 #screen-options-link-wrap {
-  background: transparent;
-  box-shadow: none;
   border: 1px solid #ccc;
+  background: transparent;
   border-radius: 5px;
+  box-shadow: none;
 }
 
 #screen-meta-links .show-settings {
@@ -12,19 +12,19 @@
 }
 
 #screen-meta-links .screen-meta-toggle {
-  height: auto;
   margin: 20px 0 0;
+  height: auto;
 }
 
 #screen-meta-links .screen-meta-toggle:first-child {
-  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
   margin-left: -1px;
 }
 
 #screen-meta-links .screen-meta-toggle:last-child {
-  border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
 }
 
 hr.wp-header-end {

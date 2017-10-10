@@ -5,27 +5,37 @@ Plugin Name: Influid Admin
 Plugin URI: http://influid.com.br/
 Description: Influid Wordpress Admin
 Author: André Daniel
-Version: 0.1
+Version: 0.2
 Author URI: https://github.com/andredaniel
 */
 
-function influid_admin_style() {
-    wp_enqueue_style('influid-admin', plugins_url('wp-admin.css', __FILE__));
-}
-add_action('admin_enqueue_scripts', 'influid_admin_style');
-add_action('login_enqueue_scripts', 'influid_admin_style');
+/**
+ * Influid Admin Plugin
+ * Copyright (C) 2017, Influid
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
 
-function influid_admin_footer() {
-    // footer admin credits
- }
- 
- add_action('admin_footer', 'influid_admin_footer');
- 
-//  Adds a custom class on body
-// Apply filter
-add_filter('body_class', 'influid_body_class');
-
-function influid_body_class($classes) {
-    $classes[] = 'influid-admin';
-    return $classes;
+if ( ! function_exists( 'add_filter' ) ) {
+	header( 'Status: 403 Forbidden' );
+	header( 'HTTP/1.1 403 Forbidden' );
+	exit();
 }
+
+if ( ! defined( 'INFLUID_FILE' ) ) {
+	define( 'INFLUID_FILE', __FILE__ );
+}
+
+// Load the Influid Admin plugin.
+require_once( dirname( INFLUID_FILE ) . '/influid-admin-main.php' );

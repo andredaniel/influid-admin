@@ -3,7 +3,7 @@ html.wp-toolbar {
 }
 
 body {
-  background-color: #f0f2f5;
+  background-color: $light-gray;
 }
 
 #wpcontent {
@@ -28,12 +28,6 @@ body {
   margin-bottom: 10px;
   display: block;
   width: 100%;
-}
-
-#minor-publishing-actions .button.preview {
-  background-color: transparent;
-  border: 1px solid #0ab496;
-  color: #0ab496;
 }
 
 #minor-publishing-actions .spinner {

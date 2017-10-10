@@ -9,7 +9,7 @@ Stable tag: 4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Simple theme to customize WordPress admin.
+A simple theme to customize your WordPress admin.
 
 == Description ==
 
